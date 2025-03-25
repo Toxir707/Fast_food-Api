@@ -1,0 +1,30 @@
+{
+  "name": "fast_food-api",
+  "version": "0.1.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/main.js",
+    "start:dev": "nodemon src/main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Toxir707/Fast_food-Api.git"
+  },
+  "keywords": [],
+  "author": "Turopov Toxir",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Toxir707/Fast_food-Api/issues"
+  },
+  "homepage": "https://github.com/Toxir707/Fast_food-Api#readme",
+  "description": "",
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mongoose": "^8.12.2"
+  }
+}
