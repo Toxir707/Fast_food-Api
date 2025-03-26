@@ -41,6 +41,7 @@ beruvchi loyihaning BackEnd API'ni ishlab chiqish
     - id
     - name
     - email
+    - phoneNumber
     - imageUrl
     - createdAt
     - updatedAt
