@@ -1,10 +1,34 @@
 import express from "express";
 import route from "./route/index.js";
+import Joi from "joi";
 
 const app = express();
 
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }));
+
+// app.use((req, res, next) => {
+    
+//     if(req.method === "POST"){
+//         const { body } = req;
+
+//         const categorySchema = Joi.object({
+//             name: Joi.string().min(4).max(8).required()
+//         });
+        
+//         const { error, value } = categorySchema.validateAsync(body)
+
+//         if(error){
+//             return res.status(400).send({
+//                 message: error.message
+//             });
+//         }
+
+//         console.log(value);
+//     }
+
+//     next();
+// });
 
 app.use("/api", route)
 
